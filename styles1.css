@@ -38,7 +38,7 @@
 
 /* Capabilities big screen Section */
 .capabilities-section {
-  padding-bottom: 116px;
+  padding: 116px 0px;
   border-bottom: 1px solid #e2e8f0;
 }
 .capabilities-container {
@@ -48,7 +48,7 @@
   text-align: center;
 }
 .capabilities-heading {
-  margin: 116px 0px 64px;
+  margin-bottom: 64px;
   text-align: center;
   font-size: 2rem;
   font-family: sofia-pro-bold;
