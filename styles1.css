@@ -237,16 +237,74 @@
 
 /* ends here */
 /* Contacts styling  part-|| */
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-me-form input:active,
+.contact-me-form input:focus {
+  border-radius: 0px;
+  outline: none;
+  border-color: #5b6e8080;
+}
+.your-name {
+  height: 40px;
+  width: 90%;
+  border-radius: 0px;
+  padding: 0px 10px;
+  font-size: 18px;
+  border: 2px solid #5b6e809a;
+  color: #5b6e80;
+  font-family: inherit;
+}
+.your-name::placeholder,
+.your-email::placeholder,
+#your-message::placeholder {
+  color: rgba(128, 128, 128, 0.9);
+}
+.your-email {
+  margin: 20px 0px;
+  height: 40px;
+  width: 90%;
+  padding: 0px 10px;
+  border-radius: 0px;
+  border: 2px solid #5b6e809a;
+  font-size: 18px;
+  color: #5b6e80;
+  font-family: inherit;
+}
+
+#your-message {
+  margin-bottom: 20px;
+  width: 90%;
+  height: 200px;
+  border-radius: 0px;
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid #5b6e809a;
+  color: #5b6e80;
+  font-family: inherit;
+}
+
+#your-message:focus,
+#your-message:active {
+  outline: none;
+  border-color: #5b6e809a;
+}
+
 .send-a-msg {
   -webkit-tap-highlight-color: transparent !important;
 
   color: #fff;
+  border: none;
   padding: 12px 12px;
   border-radius: 56px;
   font-family: sofia-pro-medium;
   font-size: 1.12rem;
-  width: 156px;
-  height: 20px;
+  width: 180px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,11 +312,25 @@
   background-size: 300% 100%;
   background-position: 100% 0;
   transition: all 0.7s ease;
+  cursor: pointer;
 }
 .send-a-msg:hover {
   background-position: 0;
   transition: all 0.7s ease;
 }
+
+.message-done {
+  display: inline-block;
+  padding-top: 10px;
+  text-align: center;
+  color: darkgreen;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.message-done.active {
+  opacity: 1;
+}
+
 .contacts-container {
   display: flex;
   flex-direction: column;
@@ -320,4 +392,31 @@
   .contacts {
     font-size: 1.25rem;
   }
+}
+.footer {
+  height: 70px;
+  border-top: 1px solid #e2e8f0;
+  background-color: rgb(246, 246, 246);
+}
+.footer-container {
+  margin: 0px auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-container p {
+  color: #5b6e80;
+  font-size: 20px;
+}
+.social-media-links a {
+  text-decoration: none;
+}
+.social-media-links svg {
+  fill: #00083d;
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+  cursor: pointer;
 }

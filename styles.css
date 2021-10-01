@@ -260,13 +260,12 @@ a {
   height: 36px;
   border-radius: 6px;
   background-color: var(--heading);
-  cursor: pointer;
   transition: transform 0.2s ease;
 }
-.colour-pallete div:hover {
+/* .colour-pallete div:hover {
   transform: scale(1.09);
   transition: transform 0.3s ease;
-}
+} */
 .colour-pallete .a {
   background-color: var(--primary);
 }
@@ -315,6 +314,9 @@ a {
 }
 
 /***** Styling for projects section ******/
+.projects-list {
+  border-radius: 4px;
+}
 .project-section {
   margin-top: 60px;
   padding: 72px 0px 72px 0px;

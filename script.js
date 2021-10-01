@@ -27,3 +27,14 @@
   n3.addEventListener("click", toggle);
   n4.addEventListener("click", toggle);
 })();
+
+const done = document.getElementById("done");
+
+function showSuccess() {
+  done.classList.add("active");
+  setTimeout(() => {
+    done.classList.remove("active");
+  }, 5000);
+}
+
+document.getElementById("showSuccess").addEventListener("click", showSuccess);
